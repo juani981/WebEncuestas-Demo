@@ -1,0 +1,7 @@
+Front-End:
+	Node.js 20
+	npm
+Back-End:
+	--Nada por el momento
+Base de Datos:
+	--Nada por el momento

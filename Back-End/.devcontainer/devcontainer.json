@@ -1,0 +1,31 @@
+// https://aka.ms/devcontainer.json
+{
+    "name": "Existing Docker Compose (Extend)",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "laravel.test",
+    "workspaceFolder": "/var/www/html",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "mikestead.dotenv",
+                "amiralizadeh9480.laravel-extra-intellisense",
+                "bmewburn.vscode-intelephense-client"
+                // "ryannaddy.laravel-artisan",
+                // "onecentlin.laravel5-snippets",
+                // "onecentlin.laravel-blade"
+            ],
+            "settings": {}
+        }
+    },
+    "remoteUser": "sail",
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {
+            "ppa": true,
+            "version": "os-provided"
+        }
+    },
+    "postCreateCommand": "chown -R 1000:1000 /var/www/html 2>/dev/null || true ; composer install && php artisan key:generate && php artisan migrate --seed"
+    // "forwardPorts": [],
+    // "runServices": [],
+    // "shutdownAction": "none",
+}

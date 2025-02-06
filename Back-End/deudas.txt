@@ -1,0 +1,25 @@
+	
+11- Corrección front si no se actualiza se queda con el nombre de usuario - se queda con el mensaje de error de login
+
+
+4- Front restante:
+	a. compartir (lista de contactos + enviar mails)
+	ax2. agregar miembros encuesta privada
+	b. index contactos? 
+	c. ver informe (pdf con graficos?)
+	f. agregar cuadro confirmación a finalizar encuesta
+
+5- Incorporar comentarios encuesta piloto
+	a. incorporar al formulario "agregar una reseña sobre la encuesta"
+		y modificar el json del end
+
+	d. Crear vista `pages/SurveyComments/${id}`
+
+6- Completar
+	a. recordarme (token de recordar)
+	c. olvidé contraseña + blanquear contraseña
+
+7- Front: Manejo de errores y redireccionamiento
+
+
+

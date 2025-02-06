@@ -1,0 +1,19 @@
+services:
+  front_end-vite:
+    container_name: "Front_End_React-Vite"
+    image: node:20-alpine
+    entrypoint: /bin/sh
+    ports:
+      - ${FRONTEND_PORT}:5173 # Expose port for accessing the Vite development server from the host
+    working_dir: /react-app
+    volumes:
+      - type: bind
+        source: ./
+        target: /react-app
+    networks:
+      - sail
+    tty: true
+
+networks:
+  sail:
+    external: true
