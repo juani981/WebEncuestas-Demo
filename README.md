@@ -30,9 +30,13 @@ Looking for a full-stack React specialist focused on data-driven applications?
 
 
 ## 📸 Key Screenshots / Capturas Clave
+General Surveys showcase in a Dashboard
 ![Dashboard Preview](screenshots/dashboard.png) 
+Fully Dynamic creation of questions for the surveys (add, delete, reorder, make mandatory) with multiple types of questions available
 ![Survey Create](screenshots/SurveyCreate.gif)
+Comprehensive List All Surveys, with actions and info about the state of the surveys
 ![List All Surveys](screenshots/SurveyList.png)
+Extensive analytics of the Data sent by the users when submiting their answers, available for export in various formats
 ![Analytics](screenshots/SurveyAnalytics.gif)
 
 ## 🧠 Why This Project? / ¿Por qué Este Proyecto?
@@ -58,7 +62,6 @@ npm run dev
 
 # Backend (requiered to use PostgreSQL)
 cd Back-End
-npm install
-npm run migrate
-npm start
+php composer install
+php artisan serve
 ```
